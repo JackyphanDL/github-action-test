@@ -17,4 +17,8 @@ jobs:
       - name: update node
         run: |
           npm -g outdate
-          npm -g update
+      - name: python Commands
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
