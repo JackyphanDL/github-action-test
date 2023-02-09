@@ -5,6 +5,7 @@ on: [push]
 jobs:
   run-shell-command:
     runs-on: ubuntu-22.04
+    needs: ["run-window-command"]
     steps:
       - name: echo a string
         run : echo "Hello World"
@@ -22,7 +23,6 @@ jobs:
 
   run-window-command:
     runs-on: windows-latest
-    needs: ["run-shell-command"]
     steps:
       - name: Directory powershell
         run: Get-Location
