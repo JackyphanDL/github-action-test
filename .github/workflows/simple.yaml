@@ -14,3 +14,7 @@ jobs:
           npm -v
       - name: check github version
         run : git version
+      - name: update node
+        run: |
+          npm -g outdate
+          npm -g update
