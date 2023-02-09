@@ -1,0 +1,10 @@
+name: Checking node
+
+on: [push]
+
+jobs:
+  run-node-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking verion node
+        run: node -v
