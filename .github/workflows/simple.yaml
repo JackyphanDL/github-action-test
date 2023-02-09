@@ -12,3 +12,5 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: check github version
+        run : git version
