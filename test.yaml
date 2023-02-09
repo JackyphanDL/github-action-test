@@ -1,0 +1,9 @@
+application : "app code"
+server : nodejs
+key:
+    key: value
+    name: james
+boolean: true
+array : 
+  - item1
+  - item2
